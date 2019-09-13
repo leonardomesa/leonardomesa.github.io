@@ -1,8 +1,58 @@
 <!DOCTYPE html>
 <html>
 <body>
+    
+  <font color="white">
+  <h1> Website </h1>
+    <h3> Welcome. </h3>
+    
+    <font size="10" id="demo" onclick="myFunction()">Click me to change my text color.</font>
+    
+<p>
+There are a lot of colors in the world, find yours!
+</p>
 
-
-
+  
+    <button onclick="myFunction()">Click me to change color of text. </button>
+    
+        <button onclick="changeBGcolor()">Click me to change color of the background. </button>
+    
+    <script>
+function changeBGcolor() {
+    document.getElementById("demo").style.color = background();
+}
+</script>
+    
+    
+<script>
+function myFunction() {
+    document.getElementById("demo").style.color = getRandomColor();
+}
+</script>
+    
+    
+  <script>  
+    function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+</script>
+    
+    <script>
+    function setRandomColor() {
+  $("#colorpad").css("background-color", getRandomColor());
+}
+</script>
+    
+ <script>
+   function background() {
+     <body bgcolor="getRandomColor()">
+}
+ </script>
+    <body bgcolor="#2F4F4F">
 </body>
 </html>
