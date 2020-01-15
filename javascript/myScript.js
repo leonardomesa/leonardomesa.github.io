@@ -2,7 +2,7 @@
 <html>
 <body>
 
-<script>
+<script src = "index.html">
     var x = 1;
         for(var loop = 0 ;loop < 256; loop++)
             x *= base
